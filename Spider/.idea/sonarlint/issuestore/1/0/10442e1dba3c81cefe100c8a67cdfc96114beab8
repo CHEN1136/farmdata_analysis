@@ -1,0 +1,16 @@
+
+[
+squid:S106A"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8ãÙ®¾.
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(ŸÈ°À8‹ˆ³¶¼.
+Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ
+[squid:S18544"8Remove this useless assignment to local variable "flag".(‰Ç±øÿÿÿÿ8’òŞ¾.
+squid:S1488U"^Immediately return this expression instead of assigning it to the temporary variable "result".(ˆ¼”÷øÿÿÿÿ8‹ˆ³¶¼.
+Gsquid:S2629="$Invoke method(s) only conditionally.(‚…šóûÿÿÿÿ8‹ˆ³¶¼.
+?squid:S1643`"Use a StringBuilder instead.(èÖçùÿÿÿÿ8‹ˆ³¶¼.
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ˆß²°8’òŞ¾.
+Lsquid:S1481+")Remove this unused "flag" local variable.(ŸÿáÑÿÿÿÿÿ8’òŞ¾.
+Fsquid:S1148j"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ßˆ’¬¾.
+Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+©%squid:RedundantThrowsDeclarationCheckn"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(àÒşüøÿÿÿÿ8¤…Šâ¾.

@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="application/msword; charset=utf-8"/>
+    <title>toWord</title>
+        <style type="text/css">
+        .bg {
+            font-size: 14.5px;
+            font-weight: bold;
+            color: #000;
+            background-color: #559e68;
+        }
+
+        table {
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            table-layout: fixed;
+        }
+
+        tr {
+            height: 32px;
+            font-size: 12px;
+        }
+
+        td {
+            padding-left: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            height: 32px;
+            overflow: hidden;
+            word-break: break-all;
+            word-wrap: break-word;
+            font-size: 14.5px;
+        }
+
+        .bg td {
+            font-size: 14.5px;
+        }
+
+        tr td {
+            font-size: 14.5px;
+        }
+
+        .specialHeight {
+            height: 40px;
+        }
+
+        .first_title {
+            height: 60px;
+            line-height: 60px;
+            margin: 0;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .second_title {
+            height: 40px;
+            line-height: 40px;
+            margin: 0;
+            font-size: 18.5px;
+        }
+
+        .doc_title {
+            font-size: 42.5px;
+            text-align: center;
+        }
+
+        .download_btn {
+            float: right;
+        }
+
+        body {
+            font-family: 思源黑体 Normal;
+        }
+    </style>
+</head>
+
+<body>
+<div style="width:1000px; margin: 0 auto">
+    <div>
+        <p class="doc_title">农产品大数据分析平台后端api接口文档（1.0）</p>
+        
+        <br>
+    </div>
+    <div style="margin-bottom:20px;">
+        <!--这个是类的说明-->
+        <h4 class="first_title">价格查询接口操作说明</h4>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">1）根据地区返回平均价格</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">根据地区返回平均价格</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">根据地区返回平均价格</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/price/getAvgPrice/{vegetable}</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.vegetable</td>
+                        <td>string</td>
+                        <td>path</td>
+                        
+                        <td>N</td>
+                        <td>品种名</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">2）根据市场、品种、品类、地区返回记录数量</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">根据市场、品种、品类、地区返回记录数量</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">根据市场、品种、品类、地区返回记录数量</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/price/getCount</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.category</td>
+                        <td>string</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>品类</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+                    <tr>
+                        <td align="left">2.market</td>
+                        <td>ref</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>市场名</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+                    <tr>
+                        <td align="left">3.region</td>
+                        <td>string</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>地区</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+                    <tr>
+                        <td align="left">4.variety</td>
+                        <td>string</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>品种名</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4">category=string&amp;market=null&amp;region=string&amp;variety=string</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">3）根据市场和品种返回查询结果</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">根据市场和品种返回查询结果</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">根据市场和品种返回查询结果</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/price/getPrice</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.market</td>
+                        <td>ref</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>市场名</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+                    <tr>
+                        <td align="left">2.pageNum</td>
+                        <td>integer(int32)</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>页码</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+                    <tr>
+                        <td align="left">3.variety</td>
+                        <td>string</td>
+                        <td>query</td>
+                        
+                        <td>N</td>
+                        <td>品种名</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4">market=null&amp;pageNum=0&amp;variety=string</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div style="margin-bottom:20px;">
+        <!--这个是类的说明-->
+        <h4 class="first_title">品种信息操作接口说明</h4>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">1）返回所有品类信息</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">返回所有品类信息</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">返回所有品类信息</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/variety/getCategories</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">2）根据品类返回种类信息</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">根据品类返回种类信息</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">根据品类返回种类信息</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/variety/getVarieties/{category}</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.category</td>
+                        <td>string</td>
+                        <td>path</td>
+                        
+                        <td>N</td>
+                        <td>品类</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div style="margin-bottom:20px;">
+        <!--这个是类的说明-->
+        <h4 class="first_title">市场信息查询接口操作说明</h4>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">1）根据省份筛选市场</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">根据省份筛选市场</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">根据省份筛选市场</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/market/getMarkets/{region}</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.region</td>
+                        <td>string</td>
+                        <td>path</td>
+                        
+                        <td>N</td>
+                        <td>省份</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">2）获取所有省份</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">获取所有省份</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">获取所有省份</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/market/getRegions</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div style="margin-bottom:20px;">
+        <!--这个是类的说明-->
+        <h4 class="first_title">数据监控操作接口说明</h4>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">1）获取所有数据监控信息</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">获取所有数据监控信息</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">获取所有数据监控信息</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/infoCount/getInfoCount/</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+
+            <!--这个是每个请求的说明，方便生成文档后进行整理-->
+            <h5 class="second_title">2）获取数据监控信息</h5>
+
+            <table border="1" cellspacing="0" cellpadding="0" width="100%">
+                <tr class="bg">
+                    <td colspan="5">获取数据监控信息</td>
+                </tr>
+                <tr>
+                    <td width="25%">接口描述</td>
+                    <td colspan="4">获取数据监控信息</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td colspan="4">/infoCount/getInfoCount/{date}</td>
+                </tr>
+                <tr>
+                    <td>请求方式</td>
+                    <td colspan="4">get</td>
+                </tr>
+                <tr>
+                    <td>请求类型</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td>返回类型</td>
+                    <td colspan="4">*/*</td>
+                </tr>
+
+                <tr class="bg">
+                    <td>参数名</td>
+                    <td width="15%">数据类型</td>
+                    <td width="15%">参数类型</td>
+                    <td width="15%">是否必填</td>
+                    <td width="29%">说明</td>
+                </tr>
+
+                
+                    <tr>
+                        <td align="left">1.date</td>
+                        <td>string</td>
+                        <td>path</td>
+                        
+                        <td>N</td>
+                        <td>日期</td>
+                        <!--                        <td th:if="${request.modelAttr}" th:text="asdfagadfg"></td>-->
+                    </tr>
+                    
+
+
+                
+
+                <tr class="bg">
+                    <td>状态码</td>
+                    <td colspan="2">描述</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+                <tr>
+                    <td>200</td>
+                    <td colspan="2">OK</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td colspan="2">Unauthorized</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>403</td>
+                    <td colspan="2">Forbidden</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    <td>404</td>
+                    <td colspan="2">Not Found</td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr class="bg">
+                    <td>返回属性名</td>
+                    <td colspan="2">类型</td>
+                    <td colspan="2">说明</td>
+                </tr>
+
+<!--               对返回参数 递归生成行-->
+                <tbody>
+    
+</tbody>
+
+                <tr class="bg">
+                    <td colspan="5">示例</td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">请求参数</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr class="specialHeight">
+                    <td class="bg">返回值</td>
+                    <td colspan="4"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+
+    
+
+
+
+    
+
+</body>
+</html>
