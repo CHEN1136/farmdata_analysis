@@ -1,0 +1,19 @@
+
+Gsquid:S2629>"$Invoke method(s) only conditionally.(‚…šóûÿÿÿÿ8‹ˆ³¶¼.
+U
+squid:S106?"9Replace this use of System.out or System.err by a logger.(Ä Y8‹ˆ³¶¼.
+[
+squid:S1062"9Replace this use of System.out or System.err by a logger.(ÑÉ„¡ÿÿÿÿÿ8‹ˆ³¶¼.
+Hsquid:S34572"%String contains no format specifiers.(ÑÉ„¡ÿÿÿÿÿ8‹ˆ³¶¼.
+`squid:S1192"IDefine a constant instead of duplicating this literal "yyyy-M-d" 4 times.(Î®§Â
+Wsquid:S1858"@"format" returns a string, there's no need to call "toString()".(Î®§Â
+?squid:S1643^"Use a StringBuilder instead.(èÖçùÿÿÿÿ8‹ˆ³¶¼.
+Vsquid:UselessImportCheck"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ
+Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+Wsquid:S1858!"@"format" returns a string, there's no need to call "toString()".(¸ò€º
+\squid:S1858"@"format" returns a string, there's no need to call "toString()".(åØ³œıÿÿÿÿ
+ysquid:S21591"VRemove this call to "equals"; comparisons between unrelated types always return false.(Ğ¾“Êÿÿÿÿÿ8‹ˆ³¶¼.
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(õñ±
+squid:S1488S"^Immediately return this expression instead of assigning it to the temporary variable "result".(ˆ¼”÷øÿÿÿÿ8‹ˆ³¶¼.
+Wsquid:S1858 "@"format" returns a string, there's no need to call "toString()".(”È¢
+isquid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(‡¦ìõ8‹ˆ³¶¼.

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spark_analysis_daily:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/spark_analysis_daily_jar</output-path>
+    <root id="archive" name="spark_analysis_daily.jar">
+      <element id="module-output" name="spark_analysis_daily" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
